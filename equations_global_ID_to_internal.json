@@ -1,0 +1,92 @@
+{
+  "E_1": {
+    "lhs": "zero",
+    "network": "root",
+    "rhs": " Instantiate ( value , value )"
+  },
+  "E_2": {
+    "lhs": "one",
+    "network": "root",
+    "rhs": " Instantiate ( value , value )"
+  },
+  "E_3": {
+    "lhs": "oneHalf",
+    "network": "root",
+    "rhs": " Instantiate ( value , value )"
+  },
+  "E_4": {
+    "lhs": "V",
+    "network": "physical",
+    "rhs": " r_x . r_y . r_z"
+  },
+  "E_5": {
+    "lhs": "p",
+    "network": "physical",
+    "rhs": " ParDiff ( U , V )"
+  },
+  "E_6": {
+    "lhs": "T",
+    "network": "physical",
+    "rhs": " ParDiff ( U , S )"
+  },
+  "E_7": {
+    "lhs": "chemPot",
+    "network": "physical",
+    "rhs": " ParDiff ( U , n )"
+  },
+  "E_10": {
+    "lhs": "G",
+    "network": "physical",
+    "rhs": " U + p . V - T . S"
+  },
+  "E_11": {
+    "lhs": "v_x",
+    "network": "physical",
+    "rhs": " inv ( t ) . r_x"
+  },
+  "E_12": {
+    "lhs": "v_y",
+    "network": "physical",
+    "rhs": " inv ( t ) . r_y"
+  },
+  "E_13": {
+    "lhs": "v_z",
+    "network": "physical",
+    "rhs": " inv ( t ) . r_z"
+  },
+  "E_14": {
+    "lhs": "Boltz",
+    "network": "physical",
+    "rhs": " Instantiate ( S , value )"
+  },
+  "E_15": {
+    "lhs": "R",
+    "network": "physical",
+    "rhs": " Avogadro . Boltz"
+  },
+  "E_8": {
+    "lhs": "H",
+    "network": "physical",
+    "rhs": " U - p . V"
+  },
+  "E_9": {
+    "lhs": "A",
+    "network": "physical",
+    "rhs": " U - T . S"
+  },
+  "E_16": {
+    "lhs": "v_x",
+    "network": "physical",
+    "rhs": " ParDiff ( r_x , t )"
+  },
+  "E_17": {
+    "lhs": "v_y",
+    "network": "physical",
+    "rhs": " ParDiff ( r_y , t )"
+  },
+  "E_18": {
+    "lhs": "v_z",
+    "network": "physical",
+    "rhs": " ParDiff ( r_z , t )"
+  }
+}
