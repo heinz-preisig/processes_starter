@@ -1142,10 +1142,10 @@
         "reactions"
       ],
       "aliases": {
-        "matlab": "K",
-        "latex": "K",
-        "internal_code": "K",
-        "global_ID": " I_I_5"
+        "matlab": "CS",
+        "latex": "CS",
+        "internal_code": "CS",
+        "global_ID": 5
       },
       "tokens": {
         "instances": [
