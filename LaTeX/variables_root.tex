@@ -12,30 +12,44 @@
 \endlastfoot
 
 
-        14
-             & \hypertarget{"v:14"}{ $ {{S}}{_{N, p, q}} $}
-             & \verb|S_Npu|
-             & selection matrix for stacker
+        15
+             & \hypertarget{"v:15"}{ $ {{S}}{_{N, q, t}} $}
+             & \verb|S_Nqt|
+             & selection matrix or splitter
              & \begin{lay}network \end{lay}
              & $  $
              & \\
-            5
-             & \hypertarget{"v:5"}{ $ {{F^{source}}}{_{A, I}} $}
-             & \verb|F_AI_source|
-             & incidence matrix AI source
+            6
+             & \hypertarget{"v:6"}{ $ {{F^{sink}}}{_{A, I}} $}
+             & \verb|F_AI_sink|
+             & incidence matrix AI sink
              & \begin{lay}network \end{lay}
              & $  $
              & \\
-            21
-             & \hypertarget{"v:21"}{ $ {{u}}{_{N, t, u}} $}
-             & \verb|u_Ntu|
-             & input signal in control domain
+            27
+             & \hypertarget{"v:27"}{ $ {{I}}{_{N, A}} $}
+             & \verb|I_NA|
+             & identity mapping from <N> to <A>
+             & \begin{lay}network \end{lay}
+             & $  $
+             & \\
+            12
+             & \hypertarget{"v:12"}{ $ {{S}}{_{A, p}} $}
+             & \verb|S_Ap|
+             & selection matrix interface species-related measures
              & \begin{lay}network \end{lay}
              & $  $
              & \\
             18
              & \hypertarget{"v:18"}{ $ {{cz}}{_{I}} $}
              & \verb|cz_I|
+             & interface variable macro --> control
+             & \begin{lay}network \end{lay}
+             & $  $
+             & \\
+            16
+             & \hypertarget{"v:16"}{ $ {{mv}}{_{I}} $}
+             & \verb|mv_I|
              & interface variable macro --> control
              & \begin{lay}network \end{lay}
              & $  $
@@ -47,10 +61,10 @@
              & \begin{lay}network \end{lay}
              & $  $
              & \\
-            2
-             & \hypertarget{"v:2"}{ $ {{F}}{_{N, A}} $}
-             & \verb|F|
-             & incidence matrix
+            11
+             & \hypertarget{"v:11"}{ $ {{I}}{_{t, u}} $}
+             & \verb|I_tu|
+             & identity mapping from <t> to <u>
              & \begin{lay}network \end{lay}
              & $  $
              & \\
@@ -61,27 +75,6 @@
              & \begin{lay}network \end{lay}
              & $  $
              & \\
-            22
-             & \hypertarget{"v:22"}{ $ {{y}}{_{N, t, u}} $}
-             & \verb|y_Ntu|
-             & output signal in control domain
-             & \begin{lay}network \end{lay}
-             & $  $
-             & \\
-            11
-             & \hypertarget{"v:11"}{ $ {{I}}{_{t, u}} $}
-             & \verb|I_tu|
-             & identity mapping from <t> to <u>
-             & \begin{lay}network \end{lay}
-             & $  $
-             & \\
-            7
-             & \hypertarget{"v:7"}{ $ {{F^{source}}}{_{N, A}} $}
-             & \verb|F_NA_source|
-             & incidence matrix NA source
-             & \begin{lay}network \end{lay}
-             & $  $
-             & \\
             8
              & \hypertarget{"v:8"}{ $ {{F^{sink}}}{_{N, A}} $}
              & \verb|F_NA_sink|
@@ -89,38 +82,24 @@
              & \begin{lay}network \end{lay}
              & $  $
              & \\
-            16
-             & \hypertarget{"v:16"}{ $ {{mv}}{_{I}} $}
-             & \verb|mv_I|
-             & interface variable macro --> control
+            2
+             & \hypertarget{"v:2"}{ $ {{F}}{_{N, A}} $}
+             & \verb|F|
+             & incidence matrix
              & \begin{lay}network \end{lay}
              & $  $
              & \\
-            12
-             & \hypertarget{"v:12"}{ $ {{S}}{_{A, p}} $}
-             & \verb|S_Ap|
-             & selection matrix interface species-related measures
+            14
+             & \hypertarget{"v:14"}{ $ {{S}}{_{N, p, q}} $}
+             & \verb|S_Npu|
+             & selection matrix for stacker
              & \begin{lay}network \end{lay}
              & $  $
              & \\
-            6
-             & \hypertarget{"v:6"}{ $ {{F^{sink}}}{_{A, I}} $}
-             & \verb|F_AI_sink|
-             & incidence matrix AI sink
-             & \begin{lay}network \end{lay}
-             & $  $
-             & \\
-            3
-             & \hypertarget{"v:3"}{ $ {{F^{source}}}{_{N, I}} $}
-             & \verb|F_NI_source|
-             & incidence matrix NI source
-             & \begin{lay}network \end{lay}
-             & $  $
-             & \\
-            9
-             & \hypertarget{"v:9"}{ $ {{S}}{_{I, p}} $}
-             & \verb|S_Ip|
-             & selection matrix interface to control input
+            5
+             & \hypertarget{"v:5"}{ $ {{F^{source}}}{_{A, I}} $}
+             & \verb|F_AI_source|
+             & incidence matrix AI source
              & \begin{lay}network \end{lay}
              & $  $
              & \\
@@ -138,10 +117,31 @@
              & \begin{lay}network \end{lay}
              & $  $
              & \\
-            27
-             & \hypertarget{"v:27"}{ $ {{I}}{_{N, A}} $}
-             & \verb|I_NA|
-             & identity mapping from <N> to <A>
+            21
+             & \hypertarget{"v:21"}{ $ {{u}}{_{N, t, u}} $}
+             & \verb|u_Ntu|
+             & input signal in control domain
+             & \begin{lay}network \end{lay}
+             & $  $
+             & \\
+            7
+             & \hypertarget{"v:7"}{ $ {{F^{source}}}{_{N, A}} $}
+             & \verb|F_NA_source|
+             & incidence matrix NA source
+             & \begin{lay}network \end{lay}
+             & $  $
+             & \\
+            22
+             & \hypertarget{"v:22"}{ $ {{y}}{_{N, t, u}} $}
+             & \verb|y_Ntu|
+             & output signal in control domain
+             & \begin{lay}network \end{lay}
+             & $  $
+             & \\
+            3
+             & \hypertarget{"v:3"}{ $ {{F^{source}}}{_{N, I}} $}
+             & \verb|F_NI_source|
+             & incidence matrix NI source
              & \begin{lay}network \end{lay}
              & $  $
              & \\
@@ -159,10 +159,10 @@
              & \begin{lay}network \end{lay}
              & $  $
              & \\
-            15
-             & \hypertarget{"v:15"}{ $ {{S}}{_{N, q, t}} $}
-             & \verb|S_Nqt|
-             & selection matrix or splitter
+            9
+             & \hypertarget{"v:9"}{ $ {{S}}{_{I, p}} $}
+             & \verb|S_Ip|
+             & selection matrix interface to control input
              & \begin{lay}network \end{lay}
              & $  $
              & \\
